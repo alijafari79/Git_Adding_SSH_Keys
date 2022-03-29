@@ -37,5 +37,21 @@ ssh-keygen -t ecdsa -b 521 -C "Comment_For_SSH_Key"
 ### Start SSH-Agent :
 
 ```
-  eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)"
 ```
+  
+### Add New Key to the agent :
+```
+ssh-add <Path_to_KeyFile>
+```
+  
+  
+### Configure git with identity :
+
+```
+git config --global user.email <Your_Email_Address>
+```
+```
+git config --global user.name  <Your_Name>
+```
+  
