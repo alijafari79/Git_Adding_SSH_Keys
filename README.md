@@ -17,3 +17,25 @@ The algorithm is selected using the -t option and key size using the -b option. 
 - ssh-keygen -t dsa 
 - ssh-keygen -t ecdsa -b 521
 - ssh-keygen -t ed25519
+
+
+### Specifying the File Name
+Normally, the tool prompts for the file in which to store the key. However, it can also be specified on the command line using the -f <filename> option.
+
+```
+ssh-keygen -f ~/AJ-key-ecdsa -t ecdsa -b 521
+```
+
+### So Far Here  :
+```
+ssh-keygen -t ecdsa -b 521 -C "Comment_For_SSH_Key"
+```
+- After running command above First you need to choose a path for the key_file (recommanded to just press **Enter** to get the default path !)
+
+- Then you are asked for a password ! (Choose your own or just press **Enter** to leave empty )
+  
+### Start SSH-Agent :
+
+```
+  eval "$(ssh-agent -s)"
+```
