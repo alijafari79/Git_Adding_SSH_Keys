@@ -23,12 +23,12 @@ The algorithm is selected using the -t option and key size using the -b option. 
 Normally, the tool prompts for the file in which to store the key. However, it can also be specified on the command line using the -f <filename> option.
 
 ```
-ssh-keygen -f ~/AJ-key-ecdsa -t ecdsa -b 521
+ssh-keygen -f ~/.ssh/main-key-rsa -t rsa -b 4096
 ```
 
 ### So Far Here  :
 ```
-ssh-keygen -t ecdsa -b 521 -C "Comment_For_SSH_Key"
+ssh-keygen -f ~/.ssh/main-key-rsa -t rsa -b 4096 -C "git_main_SSH_Key"
 ```
 - After running command above First you need to choose a path for the key_file (recommanded to just press **Enter** to get the default path !)
 
